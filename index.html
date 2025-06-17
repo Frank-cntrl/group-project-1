@@ -1,16 +1,88 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <style>
-    body {
-        background-color: #1b1b1b;
-    }
-    </style>
-</head>
-<body>
-   <p>hello world</p> 
-</body>
+
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>New York Cities Bald Spot</title>
+        <script src="https://cdn.tailwindcss.com"></script>
+        <style>
+            body{
+                font-family: 'Inter', sans-serif;
+                background-color: #000000;
+                background-image: url('https://31.media.tumblr.com/tumblr_mddysg2SdU1qjzsg7o1_500.gif');
+                background-size: cover;
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                justify-content: center;
+                box-sizing: border-box;
+            }
+            .info-box {
+            background-color: rgba(0, 0, 0, 0.7);
+            color: #F6F61F;
+            padding: 1.5rem;
+            border-radius: 12px;
+            max-width: 500px;
+            margin-top: 2rem;
+            box-shadow: 0 0 15px rgba(246, 246, 31, 0.5);
+            text-align: center;
+        }
+        .original-image-display {
+            max-width: 100%;
+            height: auto;
+            border: 2px dashed #F6F61F;
+            margin-top: 40px;
+            margin-bottom: 40px;
+            border-radius: 8px;
+            box-shadow: 0 0 15px rgba(246, 246, 31, 0.3);
+        }
+        .action-button {
+                background-color: #000000;
+                color: #F6F61F;
+                padding: 0.75rem 1.5rem;
+                border-radius: 0.5rem;
+                box-shadow: 0 4px 6px rgba(246, 246, 31, 0.3);
+                transition: background-color 0.3s ease, transform 0.2s ease;
+                font-weight: bold;
+                text-decoration: none;
+                text-align: center;
+            }
+            .action-button:hover {
+                background-color: #1a1a1a;
+                transform: translateY(-2px);
+            }
+        </style>
+    </head>
+
+    <body>
+        <div class = "info-box">
+            <h1 class = "text-2xl font-bold mb-2">The MTA Has Created a Big Fat Bald Spot in The city</h1>
+        <div>
+            <p class="text-base mb-4">
+                Hundreds of thousand of Queens residents live in a transit desert, with no subway access to the rest of the city.
+                <br>
+                With only a handful of bus lines, which are not reliable to being with, the residents within this dry spot are left to either drive or commit to 30+ minutes walks to their stations.
+                <br>
+                Despite the public outcry for a line running through this bald spot, the MTA has been slow to act.
+                <br>
+                Not only would a line through here remedy the bald spot, but it would also be a line that connects Brooklyn and Queens, outside of the G line. A much needed addition to the city.
+            </p>
+        </div>
+        </div>
+
+        <div class="flex flex-row gap-4 mt-8">
+            <a href="cityPlans.html" class="action-button">
+                See City Plans
+            </a>
+            <a href="infopage.html" class="action-button">
+                More Info
+            </a>
+        </div>
+
+        <div>
+            <img src="subwaymap.png" class="w-80 h-90 original-image-display mx-auto">
+        </div>
+            
+    </body>
 </html>
